@@ -1,0 +1,681 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "HeldenderMultiversen",
+				"abbreviation": "HdM",
+				"full": "Helden der Multiversen",
+				"url": "https://www.owlbear.app/room/oaOWODJakN6u/TheSmallGrave",
+				"authors": [
+					"Janus"
+				],
+				"convertedBy": [
+					"Janus"
+				]
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Lilith",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-elf",
+					"ranger"
+				]
+			},
+			"source": "HeldenderMultiversen",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item padded armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d10 + 3",
+				"average": 19
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 18,
+			"con": 13,
+			"int": 14,
+			"wis": 17,
+			"cha": 14,
+			"passive": 15,
+			"cr": "0",
+			"level": 3,
+			"languages": [
+				"Common",
+				"Elvish",
+				"Goblin",
+				"Giant"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"GO",
+				"GI"
+			],
+			"save": {
+				"str": "+3",
+				"dex": "+6"
+			},
+			"skill": {
+				"acrobatics": "+6",
+				"animal handling": "+5",
+				"nature": "+4",
+				"perception": "+5",
+				"sleight of hand": "+6",
+				"stealth": "+6",
+				"survival": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"{@class Ranger} Level 3",
+						"{@classFeature Favored Enemy|Ranger||1}: {@filter Goblin|bestiary|search=Humanoid (Goblinoid)} and {@filter Ogre|bestiary|search=Ogre}",
+						"{@classFeature Natural Explorer|Ranger||1}: favored terrain: desert"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell hail of thorns}",
+								"{@spell hunter's mark}"
+							],
+							"slots": 3
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"damageTagsSpell": [
+				"P"
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit +3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit +8} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW",
+				"RNG"
+			],
+			"damageTags": [
+				"P"
+			],
+			"actionHeader": [
+				"{@optfeature Archery}",
+				"{@subclassFeature Horde Breaker|Ranger||Hunter||3}",
+				"{@classFeature Primeval Awareness|Ranger||3}"
+			],
+			"fluff": {
+				"entries": [
+					"{@class Ranger} Level 3",
+					"{@classFeature Favored Enemy|Ranger||1}: {@filter Goblin|bestiary|search=Humanoid (Goblinoid)} and {@filter Ogre|bestiary|search=Ogre}",
+					"{@classFeature Natural Explorer|Ranger||1}: favored terrain: desert"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://lh3.googleusercontent.com/pw/AMWts8BH92TZmylt7F_T29q7LRaV5SXKfxeHPNVmYkIOOjJFjH9xl4RajX3eVn2HgmutYFG-5ntR0lheJ9-Ofo8nnjv5jUP96atEnxtztMzpa7YMqk8UKC1FSAYZzZjADTAgfqOb_Clj864CqrpljmRdv17Y=s579-no?authuser=0"
+						}
+					}
+				]
+			},
+			"conditionImmune": [
+				"charmed",
+				{
+					"special": "Can't be put to sleep by magic"
+				}
+			],
+			"uniqueId": "e896b9e8-a161-4687-86fa-5b2249893363"
+		},
+		{
+			"name": "Ghesh",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dragonborn",
+					"paladin"
+				]
+			},
+			"source": "HeldenderMultiversen",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item shield|phb}",
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d10 + 12",
+				"average": 28
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 13,
+			"int": 8,
+			"wis": 12,
+			"cha": 15,
+			"passive": 11,
+			"cr": "0",
+			"level": 3,
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"wis": "+3",
+				"cha": "+4"
+			},
+			"skill": {
+				"survival": "+3",
+				"animal handling": "+3",
+				"athletics": "+5",
+				"intimidation": "+4"
+			},
+			"damageTagsSpell": [
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"fluff": {
+				"entries": [
+					"{@class Paladin} Level 3",
+					"{@class paladin|phb|Oath of the Ancients|Ancients}",
+					"{@classFeature Lay on Hands|Paladin||1}",
+					"{@classFeature Divine Sense|Paladin||1}",
+					"{@classFeature Divine Smite|Paladin||2}",
+					"{@classFeature Divine Health|Paladin||3}",
+					"{@optfeature Protection}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://lh3.googleusercontent.com/dg32btY5bJK5cEQXjOdfU2ZK0ClJXfGvqfOI90kTPbl1LT4OEuZg-bOq7GdY16DwBqLG_kYtffjik7BSx9QUY6k2ssHhgXVuH5C2sQoHKwHb-9xi3rElVxYBx3hlRhZqJnSxQdD7cXLhTtGWWLHuyykNWUg3DBa3FWcedWLDix6g0NF4REHSCYnuNhg51-XKW77mSgbEG-0hny21EnhWAQ8NWnPh7Krblo5PJoV7lEmwHqDCWQKXcVeQVZApIpnb9Mgq376caSqsiVf5mAtXYduwkRMyCvNfxzYmm1j68XiOZFuaxvt2mlr9XYLBzeQJYxru3LB-o3BlHEFklnZLPq0hy-F88QIYNNu930sp6rZeyCzZE7RlFLshGaNJkb6R7ErMYdj4r5gAiRD2QYY9ngz579c73eEeFkbgIA1d4pKHnXVO8kGwodsbHUDdGTmYqvMjCOlAFwO5PzDMBnRI1g9oPs5cGqGQzxZyqs_CIcu7Z18tTVTAKyuDFUYLgLr3o0LcgX81YWFS6Zm9OfjjwPxKVlBvmIgUTEhMV0vrnqd9rHhihGw4oYnExZfBt9L2qNluGraEPAApprHnHZk4wQcOCwa3QxgAPAMVKADu7oNLvfv4MVGYmDZ_QD-WPtgZdjYUD2spCHm8kt9qW3ON5FCtuZqfGP8Y_zqpsshBpoeNgh1Ql9HBL3Hs0TSycX0IZ3-clHxsHMlSAOCk4I5lK7co6cBGOyw14FF1bgV7yjPtUMqAWvmWBU4LKd_EvxkZwxIsZG79Jf3mPuMAAgJzNyqIlnTAPvZdz-h6Jdkq6dfZHBJeyL3dPllZN4k-3HK9YIeclsj5ok0Dpe5VYx2iDv4g2YMBQbyzzj3H5jAkslyn1TDCMWk38k42LpK95PTBakUHzWx0OEcTss3jRu9BQsiHXw5DWkONYEXOOH1aOxYWjNs5quWxSYOz_JNbVS60Uif04_ZXeDc7A181QSA=s579-no?authuser=0"
+						}
+					}
+				]
+			},
+			"resist": [
+				{
+					"resist": [
+						"acid"
+					],
+					"note": "dmg -50%"
+				}
+			],
+			"action": [
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Breath Weapon",
+					"entries": [
+						"{@race Dragonborn|phb|Copper Dragon Acid Line 5 by 30 ft. (Dex. save)}"
+					]
+				},
+				{
+					"name": "Bonus damage",
+					"entries": [
+						"{@classFeature Divine Smite|Paladin||2}"
+					]
+				},
+				{
+					"name": "Heal",
+					"entries": [
+						"{@classFeature Lay on Hands|Paladin||1}"
+					]
+				},
+				{
+					"name": "Detect evil",
+					"entries": [
+						"{@classFeature Divine Sense|Paladin||1}"
+					]
+				},
+				{
+					"name": "Ensnare",
+					"entries": [
+						"{@subclassFeature Channel Divinity: Nature's Wrath|Paladin||Ancients||3}"
+					]
+				},
+				{
+					"name": "Rout fey and fiends",
+					"entries": [
+						"{@subclassFeature Channel Divinity: Turn the Faithless|Paladin||Ancients||3}"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell command}",
+								"{@spell cure wounds}",
+								"{@spell detect magic}"
+							],
+							"slots": 3
+						}
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "",
+					"headerEntries": [
+						"{@class Paladin} Level 3 has sworn the {@class paladin|phb|Oath of the Ancients|Ancients}"
+					],
+					"footerEntries": [
+						"{@subclassFeature Oath Spells|paladin||Ancients||3||Oath of the Ancients Spells}"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell ensnaring strike}",
+								"{@spell speak with animals}"
+							],
+							"slots": 0
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"reaction": [
+				{
+					"name": "Impose disadvantage",
+					"entries": [
+						"{@optfeature Protection}"
+					]
+				}
+			],
+			"conditionImmune": [
+				{
+					"special": "Disease"
+				}
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"uniqueId": "1718827c-df93-460e-ace6-6abebd5582c1",
+			"actionHeader": [
+				"{@class Paladin} Level 3 has sworn the {@class paladin|phb|Oath of the Ancients|Ancients}"
+			]
+		},
+		{
+			"name": "Maja",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"druid"
+				]
+			},
+			"source": "HeldenderMultiversen",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item padded armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d10 + 12",
+				"average": 19
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 15,
+			"con": 18,
+			"int": 11,
+			"wis": 19,
+			"cha": 10,
+			"passive": 14,
+			"cr": "0",
+			"level": 3,
+			"languages": [
+				"Common",
+				"Elvish",
+				"Druidic",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"DU",
+				"D"
+			],
+			"save": {
+				"int": "+2",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+4",
+				"insight": "+6",
+				"nature": "+2",
+				"survival": "+6"
+			},
+			"damageTagsSpell": [
+				"F",
+				"I",
+				"T"
+			],
+			"action": [
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit +8} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit +4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"RNG",
+				"MW"
+			],
+			"damageTags": [
+				"P"
+			],
+			"fluff": {
+				"entries": [
+					"{@class Druid} Level 3",
+					"{@classFeature Wild Shape|Druid||2}",
+					"{@classFeature Druid Circle|Druid||2}: {@subclassFeature Circle of the Moon|Druid||Moon||2}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://lh3.googleusercontent.com/ytcksYRhW5JX8bbwsrZ5fCJLwTqgf3uBFZv1_qukF8XuAL9p-5FTYb-nDri4RuCRPtakhpLCSjQryKyLtknZTPyFtOuTm8aLVkoOWm4b813UKx5KMYWyQuUgrK3An28xX1sDl-nZd6FOXoVU5UvGnKUqPBdjGOxn4sZxGwBIKKtaoTes03h6OSOIIaNtlF4PbvV1VaAftZLN2E4bG5kGAs4VmKg8BoPkwlb_fVdQMemkidKLaBSsun6-PgU1HzXh8FarQfpOAfhsXX4pMs_hh2X3kqqG7bS6PvpCEmVr-rB54DpVz3bpK_pG54XJyAPbe62Md29uH8sBmCU9Av42cC-qfHhvLtqIJJ3JHXBFvGG7zy_55ueDYswD7BCQ3moFbqUER0Bs1Z-YMbaTrwLVZhkPYYTeB56p14DfymCRh_PpcpwK2a4lcyVscDJ4b9O8hTS8UhwOBXSiRaGZjDmPp1jT4taoBmToZvtUw30SNLaGsZzlPRY2kWTrLiIe86zBqe5ZLS6zURdDdccuomJgZVXCJQD3YQnTkVan8PYzPAAfHwpIaSNAwyVoxVqg7txqC22IgMZm1yvB17IMpBssTrj7bRp34mwaH08cI3BJPj83Mc1iWCFuzgwInFXsPDZX5nZdOLuIvlHIPqif41mAWOV6wTOmhK7krRstWf_phkiF7rx1dyXKlYSy1bcfbhoC_w26YDpiivYINRXVD3bSo1FN3O0fXQTZKGE7wGZHX22zYnjdwbB7BcRez8d_Q2ug9-y7SiszdLPALmNY6iXBQ-eVIRUoT1Xx4nStdcWAT-WtrBX-YX6cfLAuOJ1I1BmjDgQ02az47mGWKlVchmdro9yAbaAXUhiZOj4vdBJxuDPpBDzi-4qIBeuKHMdr9YN_qfkZE42pAdG45GPmbanI51HYmH6I5tusiFFc01jjXCD-95oaFmCtljLhOO8KzQcnzr7vQ9oNxRJ0YLvblOc=s579-no?authuser=0"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell poison spray}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person}",
+								"{@spell cure wounds}",
+								"{@spell healing word}",
+								"{@spell speak with animals}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell enhance ability}",
+								"{@spell flaming sphere}"
+							],
+							"slots": 2
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"bonus": [
+				{
+					"name": "Shapeshift or heal while shapeshifted",
+					"entries": [
+						"{@subclassFeature Combat Wild Shape|Druid||Moon||2}"
+					]
+				}
+			],
+			"uniqueId": "f5143ad4-9350-485c-8b5d-49ef049cd897"
+		},
+		{
+			"name": "Maja",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"druid"
+				]
+			},
+			"source": "HeldenderMultiversen",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item padded armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d10 + 12",
+				"average": 19
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 15,
+			"con": 18,
+			"int": 11,
+			"wis": 19,
+			"cha": 10,
+			"passive": 14,
+			"cr": "0",
+			"level": 3,
+			"languages": [
+				"Common",
+				"Elvish",
+				"Druidic",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"DU",
+				"D"
+			],
+			"save": {
+				"int": "+2",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+4",
+				"insight": "+6",
+				"nature": "+2",
+				"survival": "+6"
+			},
+			"damageTagsSpell": [
+				"F",
+				"I",
+				"T"
+			],
+			"action": [
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit +8} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit +4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"RNG",
+				"MW"
+			],
+			"damageTags": [
+				"P"
+			],
+			"fluff": {
+				"entries": [
+					"{@class Druid} Level 3",
+					"{@classFeature Wild Shape|Druid||2}",
+					"{@classFeature Druid Circle|Druid||2}: {@subclassFeature Circle of the Moon|Druid||Moon||2}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://lh3.googleusercontent.com/ytcksYRhW5JX8bbwsrZ5fCJLwTqgf3uBFZv1_qukF8XuAL9p-5FTYb-nDri4RuCRPtakhpLCSjQryKyLtknZTPyFtOuTm8aLVkoOWm4b813UKx5KMYWyQuUgrK3An28xX1sDl-nZd6FOXoVU5UvGnKUqPBdjGOxn4sZxGwBIKKtaoTes03h6OSOIIaNtlF4PbvV1VaAftZLN2E4bG5kGAs4VmKg8BoPkwlb_fVdQMemkidKLaBSsun6-PgU1HzXh8FarQfpOAfhsXX4pMs_hh2X3kqqG7bS6PvpCEmVr-rB54DpVz3bpK_pG54XJyAPbe62Md29uH8sBmCU9Av42cC-qfHhvLtqIJJ3JHXBFvGG7zy_55ueDYswD7BCQ3moFbqUER0Bs1Z-YMbaTrwLVZhkPYYTeB56p14DfymCRh_PpcpwK2a4lcyVscDJ4b9O8hTS8UhwOBXSiRaGZjDmPp1jT4taoBmToZvtUw30SNLaGsZzlPRY2kWTrLiIe86zBqe5ZLS6zURdDdccuomJgZVXCJQD3YQnTkVan8PYzPAAfHwpIaSNAwyVoxVqg7txqC22IgMZm1yvB17IMpBssTrj7bRp34mwaH08cI3BJPj83Mc1iWCFuzgwInFXsPDZX5nZdOLuIvlHIPqif41mAWOV6wTOmhK7krRstWf_phkiF7rx1dyXKlYSy1bcfbhoC_w26YDpiivYINRXVD3bSo1FN3O0fXQTZKGE7wGZHX22zYnjdwbB7BcRez8d_Q2ug9-y7SiszdLPALmNY6iXBQ-eVIRUoT1Xx4nStdcWAT-WtrBX-YX6cfLAuOJ1I1BmjDgQ02az47mGWKlVchmdro9yAbaAXUhiZOj4vdBJxuDPpBDzi-4qIBeuKHMdr9YN_qfkZE42pAdG45GPmbanI51HYmH6I5tusiFFc01jjXCD-95oaFmCtljLhOO8KzQcnzr7vQ9oNxRJ0YLvblOc=s579-no?authuser=0"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"{@class Druid} Level 3 of {@classFeature Druid Circle|Druid||2}: {@subclassFeature Circle of the Moon|Druid||Moon||2} which grants special {@classFeature Wild Shape|Druid||2}"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell poison spray}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person}",
+								"{@spell cure wounds}",
+								"{@spell healing word}",
+								"{@spell speak with animals}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell enhance ability}",
+								"{@spell flaming sphere}"
+							],
+							"slots": 2
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"bonus": [
+				{
+					"name": "Shapeshift or heal while shapeshifted",
+					"entries": [
+						"{@subclassFeature Combat Wild Shape|Druid||Moon||2}"
+					]
+				}
+			],
+			"uniqueId": "e5dd7fb0-5726-46f5-9aee-d6aa8777f310"
+		}
+	]
+}
